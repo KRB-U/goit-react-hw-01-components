@@ -7,19 +7,11 @@ import { TransactionHistory } from 'components/TransactionHistory/TransactionHis
 import data from 'data/data.json';
 import user from 'data/user.json';
 import friends from 'data/friends';
+import transactions from 'data/transactions.json';
 
 export const App = () => {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101',
-      }}
-    >
+    <div>
       {/* 1 */}
       {/* <Profile
         username={user.username}
@@ -29,11 +21,11 @@ export const App = () => {
         stats={user.stats}
       /> */}
       {/* 2 */}
-      {/* <Statistics title="Upload stats" stats={data}></Statistics> */}
+      {/* <Statistics title="Upload stats" stats={data} /> */}
       {/* 3 */}
       <FriendList friends={friends} />
       {/* 4 */}
-      {/* <TransactionHistory></TransactionHistory> */}
+      {/* <TransactionHistory items={transactions} /> */}
     </div>
   );
 };

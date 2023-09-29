@@ -1,6 +1,4 @@
-import transactions from 'data/transactions.json';
-
-const TransactionHistory = () => {
+const TransactionHistory = ({ items }) => {
   return (
     <>
       <table className="transaction-history">
@@ -13,7 +11,7 @@ const TransactionHistory = () => {
         </thead>
 
         <tbody>
-          {transactions.map(transaction => {
+          {items.map(transaction => {
             return (
               <tr key={transaction.id}>
                 <td>{transaction.type}</td>

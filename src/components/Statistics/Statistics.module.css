@@ -1,0 +1,39 @@
+.statistics {
+  width: 400px;
+  margin: 0 auto;
+  background-color: gray;
+}
+
+.title {
+  padding: 30px;
+  text-align: center;
+  font-size: 30px;
+}
+
+.statList {
+  display: flex;
+}
+
+.item {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 5px;
+
+  align-items: center;
+  justify-content: center;
+
+  padding: 15px;
+
+  width: 80px;
+  outline: 1px solid silver;
+}
+
+.label {
+  color: white;
+  font-size: 15px;
+}
+
+.percentage {
+  color: white;
+  font-size: 25px;
+}

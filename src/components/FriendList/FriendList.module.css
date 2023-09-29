@@ -1,1 +1,32 @@
-w
+.friendList {
+  width: 200px;
+  margin: 0 auto;
+}
+
+.item {
+  display: flex;
+  column-gap: 10px;
+
+  align-items: center;
+  border: 1px solid orange;
+}
+.online {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+.offline {
+}
+
+.status {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.avatar {
+}
+
+.name {
+  font-size: 40px;
+}
