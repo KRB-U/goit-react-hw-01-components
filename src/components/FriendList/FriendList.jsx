@@ -1,17 +1,21 @@
-import friends from 'components/FriendList/friends';
+import friends from 'data/friends';
 
 const FriendList = () => {
   return friends.map(friend => {
-    return `<li classname="item">
-      <span classname="status"></span>
-      <img
-        classname="avatar"
-        src={friends.avatar}
-        alt={friends.name}
-        width="48"
-      />
-      <p classname="name"></p>
-    </li>`;
+    return (
+      <>
+        <li key={friend.id} className="item">
+          <span className="status"></span>
+          <img
+            className="avatar"
+            src={friend.avatar}
+            alt={friend.name}
+            width="48"
+          />
+          <p className="name">{friend.name}</p>
+        </li>
+      </>
+    );
   });
 };
 

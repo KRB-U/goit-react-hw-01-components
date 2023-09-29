@@ -1,30 +1,30 @@
-import transactions from 'components/TransactionHistory/transactions.json';
+import transactions from 'data/transactions.json';
 
 const TransactionHistory = () => {
   return (
-    <div className="profile">
-      <div className="description">
-        <img src={transactions.avatar} alt="User avatar" className="avatar" />
-        <p className="name">{transactions.username}</p>
-        <p className="tag">{transactions.tag}</p>
-        <p className="location">{transactions.location}</p>
-      </div>
+    <>
+      <table className="transaction-history">
+        <thead>
+          <tr>
+            <th>Type</th>
+            <th>Amount</th>
+            <th>Currency</th>
+          </tr>
+        </thead>
 
-      <ul className="stats">
-        <li>
-          <span className="label">Followers</span>
-          <span className="quantity">{transactions.stats.followers}</span>
-        </li>
-        <li>
-          <span className="label">Views</span>
-          <span className="quantity">{transactions.stats.views}</span>
-        </li>
-        <li>
-          <span className="label">Likes</span>
-          <span className="quantity">{transactions.stats.likes}</span>
-        </li>
-      </ul>
-    </div>
+        <tbody>
+          {transactions.map(transaction => {
+            return (
+              <tr key={transaction.id}>
+                <td>{transaction.type}</td>
+                <td>{transaction.amount}</td>
+                <td>{transaction.currency}</td>
+              </tr>
+            );
+          })}
+        </tbody>
+      </table>
+    </>
   );
 };
 

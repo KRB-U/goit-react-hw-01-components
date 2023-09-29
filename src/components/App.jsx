@@ -3,6 +3,8 @@ import { Statistics } from 'components/Statistics/Statistics';
 import { FriendList } from 'components/FriendList/FriendList';
 import { TransactionHistory } from 'components/TransactionHistory/TransactionHistory';
 
+import data from 'data/data.json';
+
 export const App = () => {
   return (
     <div
@@ -16,9 +18,9 @@ export const App = () => {
       }}
     >
       {/* 1 */}
-      <Profile></Profile>
+      {/* <Profile></Profile> */}
       {/* 2 */}
-      {/* <Statistics></Statistics> */}
+      {/* <Statistics stats={data}></Statistics> */}
       {/* 3 */}
       {/* <FriendList></FriendList> */}
       {/* 4 */}
