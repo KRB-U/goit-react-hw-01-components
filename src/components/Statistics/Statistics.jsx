@@ -2,9 +2,8 @@ const Statistics = ({ title, stats }) => {
   return (
     <>
       <section className="statistics">
-        <h2 className="title">ghfgh</h2>
-        {/* для title тре якась умова, щоб пушила title коли він перелається*/}
-        {/* Щось тупу якщо title не пустий - зарендерити */}
+        {title && <h2 className="title">{title}</h2>}
+
         <ul className="stat-list">
           {stats.map(stat => (
             <li className="item" key={stat.id}>

@@ -1,6 +1,5 @@
-import friends from 'data/friends';
-
-const FriendList = () => {
+const FriendList = ({ friends }) => {
+  console.log(friends);
   return friends.map(friend => {
     return (
       <>
