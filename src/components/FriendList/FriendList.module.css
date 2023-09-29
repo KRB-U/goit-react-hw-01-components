@@ -1,31 +1,36 @@
 .friendList {
-  width: 200px;
+  width: 300px;
   margin: 0 auto;
+  margin-bottom: 50px;
 }
 
 .item {
   display: flex;
   column-gap: 10px;
-
+  padding: 12px;
   align-items: center;
   border: 1px solid orange;
 }
+
 .online {
   width: 15px;
   height: 15px;
   border-radius: 50%;
-}
-.offline {
+  background-color: green;
 }
 
-.status {
+.offline {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: red;
+}
+
+/* .status {
   width: 20px;
   height: 20px;
   border-radius: 50%;
-}
-
-.avatar {
-}
+} */
 
 .name {
   font-size: 40px;
