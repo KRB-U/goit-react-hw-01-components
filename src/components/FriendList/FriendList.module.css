@@ -12,25 +12,20 @@
   border: 1px solid orange;
 }
 
-.online {
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-  background-color: green;
-}
-
-.offline {
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-  background-color: red;
-}
-
-/* .status {
+.status {
   width: 20px;
   height: 20px;
   border-radius: 50%;
-} */
+  border: 1px solid gray;
+}
+
+.status.true {
+  background-color: green;
+}
+
+.status.false {
+  background-color: red;
+}
 
 .name {
   font-size: 40px;
