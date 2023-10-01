@@ -1,4 +1,8 @@
 import css from './FriendList.module.css';
+// import iconSize from '../constans/iconSize';
+const iconSize = {
+  md: 48,
+};
 
 const FriendList = ({ friends }) => {
   return (
@@ -13,7 +17,7 @@ const FriendList = ({ friends }) => {
                 className={css.avatar}
                 src={friend.avatar}
                 alt={friend.name}
-                width="48"
+                width={iconSize['md']}
               />
               <p className={css.name}>{friend.name}</p>
             </li>
