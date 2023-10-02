@@ -9,7 +9,12 @@ const FriendList = ({ friends }) => {
     <>
       <ul className={css.friendList}>
         {friends.map(friend => {
-          const isOnline = friend.isOnline ? css.true : css.false;
+          const isOnline =
+            friend.isOnline !== undefined
+              ? friend.isOnline
+                ? css.true
+                : css.false
+              : '';
           return (
             <li key={friend.id} className={css.item}>
               <span className={`${css.status} ${isOnline}`}></span>
